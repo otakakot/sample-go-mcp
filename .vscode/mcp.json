@@ -10,5 +10,12 @@
         "sse": {
             "url": "http://localhost:8080"
         },
+        "app": {
+            "command": "go",
+            "args": [
+                "run",
+                "${workspaceFolder}/cmd/app/main.go",
+            ]
+        }
     }
 }
