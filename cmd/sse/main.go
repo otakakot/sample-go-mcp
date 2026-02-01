@@ -25,7 +25,7 @@ func main() {
 
 	mcp.AddTool(server, &mcp.Tool{Name: "sse", Description: "Server-Sent Events management tool"}, tool.SayHi)
 
-	handler := mcp.NewSSEHandler(func(req *http.Request) *mcp.Server {
+	handler := mcp.NewStreamableHTTPHandler(func(req *http.Request) *mcp.Server {
 		return server
 	}, nil)
 
