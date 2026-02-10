@@ -1,21 +1,28 @@
 {
     "servers": {
-        "stdio": {
+        "sample": {
             "command": "go",
             "args": [
                 "run",
-                "${workspaceFolder}/cmd/stdio/main.go",
+                "${workspaceFolder}/main.go",
             ]
         },
-        "sse": {
-            "url": "http://localhost:8080"
-        },
-        "app": {
-            "command": "go",
-            "args": [
-                "run",
-                "${workspaceFolder}/cmd/app/main.go",
-            ]
-        }
+        // "stdio": {
+        //     "command": "go",
+        //     "args": [
+        //         "run",
+        //         "${workspaceFolder}/cmd/stdio/main.go",
+        //     ]
+        // },
+        // "sse": {
+        //     "url": "http://localhost:8080"
+        // },
+        // "app": {
+        //     "command": "go",
+        //     "args": [
+        //         "run",
+        //         "${workspaceFolder}/cmd/app/main.go",
+        //     ]
+        // }
     }
 }

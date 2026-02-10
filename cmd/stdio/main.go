@@ -10,8 +10,8 @@ import (
 
 func main() {
 	server := mcp.NewServer(&mcp.Implementation{
-		Name:    "noa",
-		Title:   "Notion Database Agent",
+		Name:    "sample-go-mcp-stdio",
+		Title:   "Standard Input/Output Management Tool",
 		Version: "v0.0.1",
 	}, nil)
 
