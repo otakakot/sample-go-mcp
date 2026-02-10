@@ -20,7 +20,7 @@ func main() {
 	}, SayHi)
 	mcp.AddTool(server, &mcp.Tool{
 		Name:        "elicitation",
-		Description: "Echoes back the input message",
+		Description: "Elicits a message from the user",
 	}, Elicitation)
 
 	if err := server.Run(context.Background(), &mcp.StdioTransport{}); err != nil {
